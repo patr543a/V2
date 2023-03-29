@@ -1,0 +1,43 @@
+@media screen and (max-width: 800px) {
+    .map > img {
+        transform: none;
+    }
+
+    #section6 > article {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .columns {
+        flex-direction: column;
+    }
+
+    .column {
+        margin: 0;
+    }
+
+    #section2 > article {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    header {
+        grid-template-columns: auto 10% 1fr 0 auto;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #section2 > article {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    .columns2 {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    header {
+        grid-template-columns: auto 1% 1fr 0 auto;
+    }
+}

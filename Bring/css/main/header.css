@@ -1,0 +1,113 @@
+header {
+    display: grid;
+    grid-template-columns: auto 20% 1fr 20% auto;
+    grid-template-rows: 40px;
+    grid-template-areas: "logo . search . hamburger";
+    width: calc(100% - 10px);
+    padding: 5px;
+    z-index: 10;
+    background: var(--header);
+}
+
+header, header > img {
+    height: 100%;
+    grid-area: logo;
+}
+
+form {
+    grid-area: search;
+    display: flex;
+}
+
+nav {
+    display: none;
+    position: absolute;
+    opacity: .9;
+    top: 50px;
+    left: 0px;
+    width: 100%;
+    height: calc(100% - 50px);
+    background: var(--header);
+}
+
+.searchbar {
+    width: calc(100% - 4px);
+    height: calc(100% - 2px);
+    padding: 1px 2px;
+    border-radius: 4px;
+    outline: none;
+}
+
+.search {
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    transform: translate(-45px, 0);
+}
+
+.hamburger {
+    grid-area: hamburger;
+    display: flex;
+}
+
+.menuicon, .closeicon, .menuopener {
+    width: 40px;
+    height: 40px;
+}
+
+.closeicon {
+    display: none;
+}
+
+.menuopener {
+    opacity: 0;
+    transform: translate(40px, 0);
+    z-index: 11;
+}
+
+header:has(.menuopener:checked) > nav {
+    display: initial;
+}
+
+div:has(.menuopener:checked) > .menuicon {
+    display: none;
+}
+
+div:has(.menuopener:checked) > .closeicon {
+    display: initial;
+}
+
+#nav {
+    min-width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    z-index: 100;
+}
+
+#nav > li {
+    list-style: none;
+    width: calc(100% - 10px);
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 10px;
+    opacity: 0.9;
+    transition-duration: 0.5s;
+}
+
+#nav > li:hover {
+    background: var(--header-nav-hover);
+}
+
+#nav > li > a {
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+    font-size: 20px;
+    width: 100%;
+    text-align: end;
+    padding: 20px;
+}

@@ -1,0 +1,13 @@
+@import url('/Bring/css/style.css');
+@import url('/Bring/css/main/header.css');
+@import url('/Bring/css/main/main.css');
+@import url('/Bring/css/main/footer.css');
+@import url('/Bring/css/main/responsive.css');
+
+body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    overflow: hidden auto;
+}

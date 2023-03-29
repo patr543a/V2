@@ -1,0 +1,23 @@
+* {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --header: #ffffff;
+    --header-text: #ffffff;
+    --header-nav-hover: #ade991;
+    --section1: #ffffff;
+    --section2: #f1d537;
+    --section3: #78cc52;
+    --readmore: #202024;
+    --readmore-text: #ffffff;
+    --seekjob: #f1d537;
+    --seekjob-text: #000000;
+    --footer: #323335;
+    --footer-header: #ffffff;
+    --footer-headers: #78cc52;
+    --footer-text: #bebebe;
+    --text: #000000;
+}
