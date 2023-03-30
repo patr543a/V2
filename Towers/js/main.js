@@ -27,7 +27,7 @@ const colors = [
 
 function changeCount() {
     segmentCount = parseInt(document.getElementById('count').value);
-    
+
     setup();
 }
 
@@ -125,4 +125,4 @@ function checkWin() {
     }
 }
 
-setup();
+changeCount();
