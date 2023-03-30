@@ -27,6 +27,8 @@ const colors = [
 
 function setup() {
     hasWon = false;
+    moves = 0;
+    lastPole = undefined;
 
     minmoves.textContent = `(Minimun number of moves is ${Math.pow(2, segmentCount) - 1})`;
 
