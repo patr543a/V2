@@ -1,0 +1,25 @@
+main {
+    width: 100%;
+}
+
+.container {
+    margin: 100px auto 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 95%;
+    justify-content: center;
+}
+
+h1 {
+    width: 100%;
+    text-align: center;
+}
+
+#win {
+    display: none;
+    padding-top: 10px;
+}
+
+#moves {
+    padding-top: 40px;
+}

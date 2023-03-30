@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Towers</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="./js/main.js" defer></script>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="towercontainer">
+                <article class="tower">
+                    <div class="towerbase">
+                        <div class="pole"></div>
+                        <div class="base"></div>
+                    </div>
+                    <div id="segments1" class="segments">
+                        
+                    </div>
+                    <button class="towerbutton" onclick="move('pole1')">Move</button>
+                </article>
+            </div>
+
+            <div class="towercontainer">
+                <article class="tower">
+                    <div class="towerbase">
+                        <div class="pole"></div>
+                        <div class="base"></div>
+                    </div>
+                    <div id="segments2" class="segments">
+                        
+                    </div>
+                    <button class="towerbutton" onclick="move('pole2')">Move</button>
+                </article>
+            </div>
+
+            <div class="towercontainer">
+                <article class="tower">
+                    <div class="towerbase">
+                        <div class="pole"></div>
+                        <div class="base"></div>
+                    </div>
+                    <div id="segments3" class="segments">
+                        
+                    </div>
+                    <button class="towerbutton" onclick="move('pole3')">Move</button>
+                </article>
+            </div>
+
+            <h1 id="moves">0 Moves used</h1>
+            <h1 id="win">You Won!</h1>
+        </div>
+    </main>
+</body>
+</html>

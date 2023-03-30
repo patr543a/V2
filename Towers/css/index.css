@@ -1,0 +1,13 @@
+@import url("./style.css");
+@import url("./main.css");
+@import url("./towers.css");
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background: var(--background);
+    overflow-x: hidden;
+}

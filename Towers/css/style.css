@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: var(--text);
+    font-family: sans-serif;
+    user-select: none;
+}
+
+:root {
+    --background: #1f1f1f;
+    --text: #afafaf;
+
+    --tower-pole: linear-gradient(to right, #704639, #472f28);
+    --tower-base: linear-gradient(#aaaaaa, #555555);
+    --border: 1px solid #afafaf;
+    --segments: 5;
+    --segment-height: 25px;
+    --segment-base-width: 25px;
+    --segment-width-change: 50px;
+
+    --transition-fast: 0.25s;
+    --transition-slow: 0.5s;
+}

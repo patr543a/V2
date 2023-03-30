@@ -1,0 +1,74 @@
+.towercontainer {
+    padding: 20px;
+    min-width: calc(33.3% - 40px);
+}
+
+.tower {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 10px auto;
+    grid-template-areas: "tower" "." "button";
+}
+
+.towerbase {
+    grid-area: tower;
+    z-index: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 10px;
+    grid-template-areas: "pole" "base";
+}
+
+.pole {
+    grid-area: pole;
+    background: var(--tower-pole);
+    width: 32px;
+    min-height: 100%;
+    margin: auto;
+}
+
+.base {
+    grid-area: base;
+    background: var(--tower-base);
+}
+
+.segments {
+    grid-area: tower;
+    z-index: 1;
+    margin-bottom: 10px;
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    min-width: calc(var(--segment-width-change) * var(--segments) + var(--segment-base-width));
+    min-height: calc(var(--segment-height) * var(--segments));
+}
+
+.segment {
+    height: var(--segment-height);
+    background: white;
+    border-radius: 100px;
+    transition: transform 1s;
+}
+
+.selected {
+    transform: translate(0, calc(-2.5 * var(--segment-height)));
+}
+
+.towerbutton {
+    grid-area: button;
+    box-sizing: border-box;
+    width: 90%;
+    margin: auto;
+    padding: 15px 0;
+    border: var(--border);
+    border-radius: 4px;
+    background: transparent;
+    transition: text-shadow var(--transition-slow);
+}
+
+.towerbutton:hover {
+    cursor: pointer;
+    text-shadow: 0 0 5px white;
+}
