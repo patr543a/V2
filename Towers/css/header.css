@@ -1,0 +1,39 @@
+header {
+    box-sizing: border-box;
+    padding: 5px;
+    height: 32px;
+    background: var(--header);
+    border-bottom: var(--borders);
+}
+
+form, form > * {
+    height: 100%;
+}
+
+#count {
+    box-sizing: border-box;
+    width: 50px;
+    border-radius: 4px;
+    padding: 2px 4px;
+    background: transparent;
+    border: var(--borders);
+    outline: none;
+}
+
+#count:valid {
+    border: 1px solid green;
+    background: rgba(0, 255, 0, .1);
+}
+
+#count:invalid {
+    border: 1px solid maroon;
+    background: rgba(255, 0, 0, .1);
+}
+
+#submit {
+    box-sizing: border-box;
+    border: var(--borders);
+    background: transparent;
+    padding: 0 15px;
+    border-radius: 4px;
+}

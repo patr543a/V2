@@ -25,10 +25,19 @@ const colors = [
     'linear-gradient(lightblue, blue)'
 ];
 
+function changeCount() {
+    segmentCount = parseInt(document.getElementById('count').value);
+    
+    setup();
+}
+
 function setup() {
     hasWon = false;
     moves = 0;
     lastPole = undefined;
+    locations.pole1 = [];
+    locations.pole2 = [];
+    locations.pole3 = [];
 
     minmoves.textContent = `(Minimun number of moves is ${Math.pow(2, segmentCount) - 1})`;
 
