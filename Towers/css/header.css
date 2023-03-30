@@ -30,7 +30,7 @@ form, form > * {
     background: rgba(255, 0, 0, .1);
 }
 
-#submit {
+form > button {
     box-sizing: border-box;
     border: var(--borders);
     background: transparent;

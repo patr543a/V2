@@ -12,3 +12,9 @@ body {
     overflow-x: hidden;
     padding-bottom: 100px;
 }
+
+button:hover {
+    cursor: pointer;
+    text-shadow: 0 0 5px white;
+    transition: text-shadow var(--transition-slow);
+}

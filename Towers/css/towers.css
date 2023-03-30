@@ -65,10 +65,4 @@
     border: var(--border);
     border-radius: 4px;
     background: transparent;
-    transition: text-shadow var(--transition-slow);
-}
-
-.towerbutton:hover {
-    cursor: pointer;
-    text-shadow: 0 0 5px white;
 }
