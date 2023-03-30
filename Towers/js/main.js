@@ -1,8 +1,13 @@
 const segments = document.getElementsByClassName('segments');
 const win = document.getElementById('win');
 const movesElement = document.getElementById('moves');
+const minmoves = document.getElementById('minmoves');
+
+let segmentCount = 5;
+let segmentWidth = 50;
+let segmentBaseWidth = 25;
+
 let lastPole = undefined;
-let count = 0;
 let moves = 0;
 let hasWon = false;
 
@@ -20,12 +25,14 @@ const colors = [
     'linear-gradient(lightblue, blue)'
 ];
 
-function setup(segmentCount, segmentWidth, segmentBaseWidth) {
-    count = segmentCount;
+function setup() {
+    hasWon = false;
+
+    minmoves.textContent = `(Minimun number of moves is ${Math.pow(2, segmentCount) - 1})`;
 
     removeSegments();
-    setCSSVariables(segmentCount, segmentWidth, segmentBaseWidth);
-    createSegments(segmentCount, segmentWidth, segmentBaseWidth);
+    setCSSVariables();
+    createSegments();
 }
 
 function removeSegments() {
@@ -36,7 +43,7 @@ function removeSegments() {
     });
 }
 
-function setCSSVariables(segmentCount, segmentWidth, segmentBaseWidth) {
+function setCSSVariables() {
     const root = document.querySelector(':root');
 
     root.style.setProperty('--segments', segmentCount);
@@ -44,7 +51,7 @@ function setCSSVariables(segmentCount, segmentWidth, segmentBaseWidth) {
     root.style.setProperty('--segment-base-width', segmentBaseWidth);
 }
 
-function createSegments(segmentCount, segmentWidth, segmentBaseWidth) {
+function createSegments() {
     for (let i = 0; i < segmentCount; i++) {
         const element = document.createElement("div")
 
@@ -100,11 +107,11 @@ function move(pole) {
 }
 
 function checkWin() {
-    if (locations.pole2.length === count || locations.pole3.length === count) {
+    if (locations.pole2.length === segmentCount || locations.pole3.length === segmentCount) {
         hasWon = true;
 
         win.style.display = "initial";
     }
 }
 
-setup(3, 50, 25);
+setup();
