@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    // #1
+    const greeting = 'Hej verden';
+    console.log(greeting);
+
+    // #2
+    const [firstname, middlename, lastname] = ['John', 'F', 'Kennedy'];
+    const fullname = `${firstname} ${middlename} ${lastname}`;
+    console.log(fullname);
+
+    // #3
+    const salary = 5000;
+    console.log(salary);
+
+    // #4
+    console.log((5 + 5) * 3);
+
+    // #5
+    const [num1, num2] = [42, 10];
+    const sum1 = num1 + num2;
+    console.log(sum1);
+
+    // #6
+    const [deci1, deci2] = [2.25, 3.50];
+    const sum2 = Math.ceil(deci1 + deci2);
+    console.log(sum2);
+
+    // #7
+    const [deci3, deci4] = [2.55, 1.44];
+    const sum3 = Math.floor(deci3 + deci4);
+    console.log(sum3);
+
+    // #8
+    console.log(Math.sqrt(65));
+
+    // #9
+    console.log('John Doe is 25 years old'.replace('Doe', ''));
+
+    // #10
+    console.log(10 == 6);
+
+    // Andre opgaver
+
+    // #9
+    const compare = false;
+    console.log(compare);
+
+    // #10
+    console.log(typeof(fullname), typeof(salary), typeof(deci3), typeof(compare));
+
+    // #11
+    let [type1, type2, type3, type4] = ['10', '2', 20, 10];
+
+    console.log(type1 + type2);
+    console.log(type1 + type3);
+    console.log(type4 + type2);
+    console.log(`Resultatet af type3 + type4 er: ${type3 + type4}`);
+    console.log(type3 + type4 + type2);
+    console.log(type4 / type2);
+    console.log(type2 * type3 + type1);
+
+    [type1, type2, type3, type4] = ['1', '2', '20', '10'];
+
+    console.log(type1 + type2);
+    console.log(type3 + type4);
+
+</script>
+<body>
+    
+</body>
+</html>

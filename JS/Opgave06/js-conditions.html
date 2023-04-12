@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    const [value1, minAge, firstname, gender, counter, myAge] = [73, 23, '', 'male', 23, 34];
+
+    // #1
+    if (value1 > 50)
+        console.log('Tallet er større end 50');
+
+    // #2
+    if (minAge >= 18)
+        console.log('Aldren er større end eller lig med 18');
+
+    // #3
+    if (firstname === '')
+        console.log('Du glemte atindtaste dit fornavn');
+    
+    // #4
+    if (gender === 'male')
+        console.log('Personen er en mand');
+    else
+        console.log('Personen er en kvinde');
+    
+    // #5
+    if (counter !== counter)
+        console.log('Tallet er godkendt');
+    else
+        console.log('Tallet er 50');
+    
+    // #6
+    if (myAge <= 18)
+        console.log('Du er et barn');
+    else if (myAge < 62)
+        console.log('Du er voksen');
+    else
+        console.log('Du er pensionist');    
+</script>
+<body>
+    
+</body>
+</html>
