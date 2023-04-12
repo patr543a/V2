@@ -18,8 +18,8 @@
             'answers': ['-5', '5'],
         },
         {
-            'question': 'Hvad er x når -10(-x - 2) + 20 = 420?',
-            'answers': ['38'],
+            'question': 'Hvad er x når 2(x - 2)(x + 3) + 12 = 420?',
+            'answers': ['-15', '14'],
         },
     ];
 
