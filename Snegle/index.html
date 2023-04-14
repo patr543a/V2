@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snegle</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="./js/menus.js" defer></script>
+    <script src="./js/settingsMenu.js" defer></script>
+    <script src="./js/main.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="filler"></div>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="startline"></div>
+            <div class="race">
+                <div class="track">
+                    <div id="snail1" class="racesnail">
+                        <img src="./imgs/snail1.png" alt="">
+                        <p id="snail1name" class="racesnailname"></p>
+                    </div>
+                </div>
+                <div class="track">
+                    <div id="snail2" class="racesnail">
+                        <img src="./imgs/snail2.png" alt="">
+                        <p id="snail2name" class="racesnailname"></p>
+                    </div>
+                </div>
+                <div class="track">
+                    <div id="snail3" class="racesnail">
+                        <img src="./imgs/snail3.png" alt="">
+                        <p id="snail3name" class="racesnailname"></p>
+                    </div>
+                </div>
+                <div class="track">
+                    <div id="snail4" class="racesnail">
+                        <img src="./imgs/snail4.png" alt="">
+                        <p id="snail4name" class="racesnailname"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="finishline"></div>
+        </div>
+
+        <div class="settings">
+            <form action="javascript:submit()" class="settingsContainer">
+                <h2>Snegleræs</h2>
+                <h4>Hvem skal være med i løbet?</h4>
+                <div class="snails"></div>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="stats">
+                <span>Tid: </span><h2 id="timer">00<sub>000</sub></h2>
+                <span>Færdig: </span><h2 id="end">00<sub>000</sub></h2>
+                <span>Hurtigste: </span><h2 id="fastest">no one, 00<sub>000</sub></>
+            </div>
+            <div class="seperator"></div>
+            <div class="overview">
+                <div><span id="racer1name">no one</span><h2 id="racer1time">00<sub>000</sub></h2></div>
+                <div><span id="racer2name">no one</span><h2 id="racer2time">00<sub>000</sub></h2></div>
+                <div><span id="racer3name">no one</span><h2 id="racer3time">00<sub>000</sub></h2></div>
+                <div><span id="racer4name">no one</span><h2 id="racer4time">00<sub>000</sub></h2></div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

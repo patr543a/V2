@@ -1,0 +1,12 @@
+:root {
+    --background: center top repeat-x url('../imgs/background.jpg') #39ac39;
+    --settings: #dee9b6;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    color: var(--text);
+    font-family: sans-serif;
+    box-sizing: border-box;
+}

@@ -1,0 +1,17 @@
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 0;
+}
+
+nav {
+    width: 90%;
+    display: flex;
+    margin: auto;
+}
+
+.filler {
+    flex-grow: 1;
+}
